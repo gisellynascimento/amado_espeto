@@ -646,6 +646,15 @@ function abrirModalAdmin() {
 function fecharModalAdmin() {
     const modal = document.getElementById('modalAdmin');
     if (modal) modal.classList.add('hidden');
+
+    // Reseta o painel para exigir a senha novamente na próxima vez que abrir
+    const secLogin = document.getElementById('secLoginAdmin');
+    const secConteudo = document.getElementById('secConteudoAdmin');
+    const inputSenha = document.getElementById('inputSenhaAdmin');
+
+    if (secLogin) secLogin.classList.remove('hidden');
+    if (secConteudo) secConteudo.classList.add('hidden');
+    if (inputSenha) inputSenha.value = '';
 }
 
 function validarSenhaAdmin() {
