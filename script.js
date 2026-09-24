@@ -1,4 +1,4 @@
-const SENHA_ADMIN = '65186518';
+const SENHA_ADMIN = '6518';
 
 // Defina aqui o número de WhatsApp do estabelecimento (com DDD) para receber os pedidos de entrega
 const WHATSAPP_ESTABELECIMENTO = '22999392176';
